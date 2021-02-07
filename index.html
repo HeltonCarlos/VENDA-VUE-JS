@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Venda-Produto</title>
+</head>
+<body>
+     <header>
+             <div class="container-header">
+                    <div>
+                        <h1>SHOPVUE</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Loja</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                    <span>| Carrinho</span> 
+                    </div>
+            </div>
+        </header>
+            <div id="app">
+            <section>
+            <div class="container-produtos" >
+                <div class="produto">
+                  {{produtos}}
+                    <div class="img-top">
+                       
+                        <h2>produtos</h2>
+                        <img src="" alt="">
+                    </div>
+                    <div class="img-base">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="texto">
+                    <h3>produto</h3>
+                    <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex quaerat inventore! Tempora hic facilis doloribus autem, obcaecati libero quis voluptas ducimus quam, delectus enim cupiditate atque dignissimos perferendis corporis.</p>
+                    <button>+</button>
+                    <button>-</button>
+                    <button>COMPRAR</button>
+                    <p>Quantidade <span>0</span></p>
+                </div>
+            </div>
+            </section>
+
+            <section>
+                <div class="gray-one">
+                    <p>Id</p>
+                    <p>00000001</p>
+                </div>
+                <div class="gray-two">
+                    <p>Modelo</p>
+                    <p>Nome</p>
+                </div>
+            </section>
+
+
+            <footer>
+                <div>
+                    <div>
+                    <h3>SHOPVUE</h3> 
+                        <img src="" alt="cartão">
+                    </div>
+                    <div>
+                        <p>Contato:</p>
+                        <p>(82)98755-2551</p>
+                        <p>(82)3455-2001</p>
+                    </div>
+                    <div>
+                        <p>Rua: General Almir</p>
+                        <p>Bairro: Farol</p>
+                        <p>Cidade: Maceió-AL</p>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

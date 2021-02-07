@@ -22,8 +22,8 @@
                             <li><a href="#">Contato</a></li>
                         </ul>
                     </nav>
-                    <div>
-                    <span>| Carrinho</span> 
+                    <div class="compra">
+                    <span><img src="img/carrinho-de-compras-de-design-xadrez.png" alt="carrinho"> | Carrinho</span> 
                     </div>
             </div>
         </header>
@@ -32,7 +32,6 @@
             <div class="container-produtos" v-for="produto in produtos">
                 <div class="produto">
                     <div class="img-top">
-                        <h2>{{produto.nome}}</h2>
                         <img :src="produto.img01" :alt="produto.nome" width="300px">
                     </div>
                     <div class="img-base">
@@ -42,39 +41,69 @@
                 </div>
                 <div class="texto">
                     <h3>{{produto.nome}}</h3>
+                    <p>Descrição:</p><br>
+                    <p>{{produto.descric}}</p>
                     <h5>R$ {{produto.valor}}</h5>
+                    <p>Estoque: <span>{{produto.quantidade}}</span> uni</p>
                     <label>Voltagem:</label>
                     <select>
                         <option>110v</option>
                         <option>220v</option>
                     </select>
                     <div>
-                        <button>+</button>
-                        <button>-</button>
+                        <button @click="adicionar++">+</button>
+                        <button @click="remover--">-</button>
+                        <p>Quantidade: <span><strong>1</strong> </span></p>
                     </div>
-                    <button>COMPRAR</button>
-                    <p>Estoque: <span>{{produto.quantidade}}</span> uni</p>
+                    <button class="btn-compra"><span><img src="img/carrinho-de-compras-de-design-xadrez.png" alt="carrinho"></span>  COMPRAR</button>
+                    
                 </div>
             </div>
             </section>
 
-            <section>
+            <section class="descric">
+                <div class="container-descric">
                 <div class="gray-one">
                     <p>Id</p>
-                    <p>00000001</p>
+                    <p>000001</p>
                 </div>
                 <div class="gray-two">
                     <p>Modelo</p>
                     <p>Nome</p>
                 </div>
+                <div class="gray-one">
+                    <p>Id</p>
+                    <p>000001</p>
+                </div>
+                <div class="gray-two">
+                    <p>Modelo</p>
+                    <p>Nome</p>
+                </div>
+                <div class="gray-one">
+                    <p>Id</p>
+                    <p>000001</p>
+                </div>
+                <div class="gray-two">
+                    <p>Modelo</p>
+                    <p>Nome</p>
+                </div>
+                <div class="gray-one">
+                    <p>Id</p>
+                    <p>000001</p>
+                </div>
+                <div class="gray-two">
+                    <p>Modelo</p>
+                    <p>Nome</p>
+                </div>
+            </div>
             </section>
 
 
             <footer>
-                <div>
+                <div class="container-rodape">
                     <div>
                     <h3>SHOPVUE</h3> 
-                        <img src="" alt="cartão">
+                        <img src="img/cartao.png" alt="cartão">
                     </div>
                     <div>
                         <p>Contato:</p>
@@ -87,6 +116,7 @@
                         <p>Cidade: Maceió-AL</p>
                     </div>
                 </div>
+                <p class="fim">Todos os direitos reservado.</p>
             </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>

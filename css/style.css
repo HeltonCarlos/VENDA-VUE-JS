@@ -6,11 +6,23 @@ header{background: brown;color:#fff;width: 100%;}
 nav ul{display: flex;}
 nav ul li a{color: #fff;margin-left: 20px;font-weight: 700; }
 nav ul li a:hover{color:cadetblue;border-top: 2px solid cadetblue;}
+.compra{display: flex; align-items: center;}
 
-.container-produtos{max-width: 80%; margin: 50px auto;display: flex;justify-content: space-between;}
+.container-produtos{max-width: 80%; margin: 50px auto;display: flex;justify-content: space-between;flex-wrap: wrap;}
 .img-base img{padding-right: 50px;}
 .texto{width: 350px;}
-.texto h3{padding-bottom: 20px;}
-.texto h5{font-size: 30px; font-weight: bolder;}
+.texto h3{padding-bottom: 10px;font-size: 30px;}
+.texto h5{font-size: 25px; font-weight: bolder;padding-top: 10px;}
 .texto select{padding: 2px 20px;font-size: 20px;margin: 10px 0px;}
-.texto button{margin:10px 0px;padding:5px 40px}
+.texto button{margin:10px 0px;padding:10px 40px;background: brown;border: 0;color: #fff;}
+.btn-compra{display:flex;align-items: center;}
+
+.descric{width: 100%;margin: 50px 0px;}
+.container-descric{max-width: 80%;margin: 0 auto;display: flex;flex-direction: column;}
+.container-descric .gray-one{max-width: 100%; background-color: #ccc;display: flex;justify-content:space-between;padding: 8px 40px;}
+.container-descric .gray-two{max-width: 100%; background-color: rgb(236, 236, 236);display: flex;justify-content: space-between;padding: 8px;padding: 8px 40px;}
+
+footer{width: 100%; padding: 20px 0px;background: darkred;color:#fff;}
+.container-rodape{max-width: 80%;display: flex;margin:0 auto;justify-content: space-between;align-items: center;flex-wrap: wrap;padding-bottom: 20px;}
+footer h3{padding-bottom: 20px;}
+.fim{text-align: center;}

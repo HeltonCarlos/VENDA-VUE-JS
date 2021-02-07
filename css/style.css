@@ -7,4 +7,10 @@ nav ul{display: flex;}
 nav ul li a{color: #fff;margin-left: 20px;font-weight: 700; }
 nav ul li a:hover{color:cadetblue;border-top: 2px solid cadetblue;}
 
-.container-produtos{max-width: 80%; margin: 50px auto;}
+.container-produtos{max-width: 80%; margin: 50px auto;display: flex;justify-content: space-between;}
+.img-base img{padding-right: 50px;}
+.texto{width: 350px;}
+.texto h3{padding-bottom: 20px;}
+.texto h5{font-size: 30px; font-weight: bolder;}
+.texto select{padding: 2px 20px;font-size: 20px;margin: 10px 0px;}
+.texto button{margin:10px 0px;padding:5px 40px}

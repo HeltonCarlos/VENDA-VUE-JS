@@ -3,10 +3,10 @@ const app = new Vue({
     data: {
      produtos:[]
     },
-    method:{
+    methods:{
         fetchProdutos(){
             fetch("./api/api.json")
-            .then(r=>r.json)
+            .then(r=> r.json())
             .then(r=>{
                 this.produtos=r;
             })

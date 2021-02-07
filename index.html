@@ -29,26 +29,31 @@
         </header>
             <div id="app">
             <section>
-            <div class="container-produtos" >
+            <div class="container-produtos" v-for="produto in produtos">
                 <div class="produto">
-                  {{produtos}}
                     <div class="img-top">
-                       
-                        <h2>produtos</h2>
-                        <img src="" alt="">
+                        <h2>{{produto.nome}}</h2>
+                        <img :src="produto.img01" :alt="produto.nome" width="300px">
                     </div>
                     <div class="img-base">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <img :src="produto.img02" :alt="produto.nome" width="170px">
+                        <img :src="produto.img03" :alt="produto.nome" width="170px">
                     </div>
                 </div>
                 <div class="texto">
-                    <h3>produto</h3>
-                    <p>Descrição: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex quaerat inventore! Tempora hic facilis doloribus autem, obcaecati libero quis voluptas ducimus quam, delectus enim cupiditate atque dignissimos perferendis corporis.</p>
-                    <button>+</button>
-                    <button>-</button>
+                    <h3>{{produto.nome}}</h3>
+                    <h5>R$ {{produto.valor}}</h5>
+                    <label>Voltagem:</label>
+                    <select>
+                        <option>110v</option>
+                        <option>220v</option>
+                    </select>
+                    <div>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
                     <button>COMPRAR</button>
-                    <p>Quantidade <span>0</span></p>
+                    <p>Estoque: <span>{{produto.quantidade}}</span> uni</p>
                 </div>
             </div>
             </section>

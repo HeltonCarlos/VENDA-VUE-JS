@@ -6,14 +6,12 @@
     "nome":"Forno micro-ondas Electrolux",
     "descric":"Feito para que você produza diversos tipos de receitas com o máximo de tecnologia e, tenha em sua cozinha um produto com design maravilhoso, o Micro-ondas Electrolux MTD30 20 Litros Branco possui 10 níveis de potência e te oferece uma maior praticidade no dia a dia.",
     "marca":"Electrolux",
-    "valor":"469,99",
+    "valor":462.22,
     "quantidade":15,
-    "ficha":[{
-        "material/Composição":"Plástico, aço inox e vidro",
-        "Capacidade":"(litros)20L",
-        "Consumo (kw/h)":"Modo espera stand by: 0,03 Kw/h/dia",
-        "Potência (w)":"1130w / 1150w",
-        "Cor":"Branco"
-    }]
+    "material":"Plástico, aço inox e vidro",
+    "Capacidade":"(litros)20L",
+    "Consumo":"Modo espera stand by: 0,03 Kw/h/dia",
+    "Potência":"1130w / 1150w",
+    "Cor":"Branco"
    
 }]

@@ -1,7 +1,8 @@
 const app = new Vue({
     el: '#app',
     data: {
-     produtos:[]
+     produtos:[],
+     unidades:1
     },
     methods:{
         fetchProdutos(){
@@ -16,3 +17,4 @@ const app = new Vue({
         this.fetchProdutos();
     }
   });   
+

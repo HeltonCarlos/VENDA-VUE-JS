@@ -39,21 +39,23 @@
                         <img :src="produto.img03" :alt="produto.nome" width="170px">
                     </div>
                 </div>
-                <div class="texto">
+                <div class="texto" >
                     <h3>{{produto.nome}}</h3>
                     <p>Descrição:</p><br>
                     <p>{{produto.descric}}</p>
-                    <h5>R$ {{produto.valor}}</h5>
-                    <p>Estoque: <span>{{produto.quantidade}}</span> uni</p>
+                    <h5>R${{produto.valor}}</h5>
+                    <p>Estoque: <span>{{produto.quantidade-unidades}}</span> uni</p>
                     <label>Voltagem:</label>
                     <select>
                         <option>110v</option>
                         <option>220v</option>
                     </select>
                     <div>
-                        <button @click="adicionar++">+</button>
-                        <button @click="remover--">-</button>
-                        <p>Quantidade: <span><strong>1</strong> </span></p>
+                        <button @click="unidades++">+</button>
+                        <button @click="unidades--">-</button>
+                        <p>Quantidade: <span><strong>{{unidades}}</strong> </span></p>
+                        
+                        <p>Total: <span><strong>{{unidades*produto.valor}}</strong> </span></p>
                     </div>
                     <button class="btn-compra"><span><img src="img/carrinho-de-compras-de-design-xadrez.png" alt="carrinho"></span>  COMPRAR</button>
                     
@@ -62,39 +64,36 @@
             </section>
 
             <section class="descric">
-                <div class="container-descric">
+                <div class="container-descric" v-for="produto in produtos">
                 <div class="gray-one">
                     <p>Id</p>
-                    <p>000001</p>
+                    <p>{{produto.id}}</p>
                 </div>
                 <div class="gray-two">
-                    <p>Modelo</p>
-                    <p>Nome</p>
+                    <p>Marca</p>
+                    <p>{{produto.marca}}</p>
                 </div>
                 <div class="gray-one">
-                    <p>Id</p>
-                    <p>000001</p>
+                    <p>Material/Composição</p>
+                    <p>{{produto.material}}</p>
                 </div>
                 <div class="gray-two">
-                    <p>Modelo</p>
-                    <p>Nome</p>
+                    <p>Capacidade</p>
+                    <p>{{produto.Capacidade}}</p>
                 </div>
                 <div class="gray-one">
-                    <p>Id</p>
-                    <p>000001</p>
+                    <p>Consumo</p>
+                    <p>{{produto.Consumo}}</p>
                 </div>
                 <div class="gray-two">
-                    <p>Modelo</p>
-                    <p>Nome</p>
+                    <p>Potência</p>
+                    <p>{{produto.Potência}}</p>
                 </div>
                 <div class="gray-one">
-                    <p>Id</p>
-                    <p>000001</p>
+                    <p>Cor</p>
+                    <p>{{produto.Cor}}</p>
                 </div>
-                <div class="gray-two">
-                    <p>Modelo</p>
-                    <p>Nome</p>
-                </div>
+
             </div>
             </section>
 

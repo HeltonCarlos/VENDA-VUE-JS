@@ -1,2 +1,2 @@
 # VENDA-VUE-JS
- frameworlk VUE-JS
+ framework VUE-JS
